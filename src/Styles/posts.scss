@@ -1,0 +1,47 @@
+@import './tools.scss';
+body{
+        background-color: map-get($color_palette,VeryLightGray);
+}
+.content{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+          margin:2% 3%;
+          >*{
+              text-decoration: none;
+              color: map-get($color_palette,VeryDarkBlueT);
+          }
+       
+
+}
+.postItem{
+       width: 100%;
+       height: 97%;
+       border-color:map-get($color_palette,VeryLightGray);
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       &:hover{
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    &>.information{
+              padding: 2px 16px;
+    }
+
+}
+.header{
+       display: flex;
+       justify-content: space-between;
+       margin:2% 3%;
+       &>*{
+                 padding: 1%;
+                 border-radius:1px;
+                 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                 border:none;
+       }
+}
+input[type="text"]{
+          width:30%;
+}
+
+        
+        
