@@ -9,9 +9,8 @@ function App() {
        <Route path="/" element={<Header />}>
        <Route path="/" element={< Posts/>}/>
        <Route path="/posts" element={< Posts/>}/>
-       </Route>
        <Route path='posts/:name' element={<Country />} />
-          {/* </Route> */}
+          </Route>
      </Routes>
     </div>
   );

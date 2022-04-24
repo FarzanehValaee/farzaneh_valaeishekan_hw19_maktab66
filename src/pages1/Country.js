@@ -47,7 +47,15 @@ export default function Country() {
                       }
                     </span></p>
                   <p>Capital:<span className="tag">{currentCountry.capital}</span></p>
+                  <div className="borders">
+                    Border Countries:
+                    <span className="tag">
+                          {currentCountry.borders?.map((border)=>{
+                              return <button className="tagItems">{border}</button>
+                            })}</span>
                 </div>
+                </div>
+
     </div>
     </div>
   )

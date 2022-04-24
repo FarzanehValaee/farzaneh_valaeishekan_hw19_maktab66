@@ -10,20 +10,10 @@ export default function Header() {
             },[])
 
   return (
-    <>
-    <div className="header">
-            <input type="text" name="search" placeholder="Search for a country..."/>
-            <select name="Filter by Region">
-                {         
-                    region?.map((country) =>{
-                              return(
-                                        <option value={country.region}>{country.region}</option>
-                              )
-                }    
-          )}
-           </select>
-    </div>
+    <div className="TopHeader">
+     <p>Where in the world?</p>
+     <button>Dark Mode</button>
     <Outlet />
-    </>
+    </div>
   )
 }
