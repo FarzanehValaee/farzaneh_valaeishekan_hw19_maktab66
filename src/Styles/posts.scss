@@ -42,6 +42,9 @@ body{
 input[type="text"]{
           width:30%;
 }
+.tagItems,.tag{
+       color: map-get($color_palette,DarkGray);
+}
 
         
         

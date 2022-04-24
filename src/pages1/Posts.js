@@ -7,7 +7,7 @@ export default function Posts() {
           const[posts,setPosts] =useState([]);
           const[searchTerm,setSearchTerm] =useState('');
           let regions=[];
-          let items=posts
+          let items
           useEffect(() => {
                     fetch("https://restcountries.com/v2/all")
                     .then((data) => data.json())
