@@ -1,8 +1,8 @@
 @import './tools.scss';
-.TopHeader{
-          box-shadow: 0 4px 8px 0 map-get($color_palette,DarkBlue);
-}
 .darkMode{
+          &,TopHeader{
+                    box-shadow: 0 4px 8px 0 map-get($color_palette,White);
+          }
            background-color: map-get($color_palette,VeryDarkBlueT);
            color: map-get($color_palette,White);
            input,select{
@@ -25,5 +25,11 @@
                     }
              }
             }
+          &>.countryPage{
+                    padding-bottom: 7%;
+                    &>.country{
+                              box-shadow: 2px 4px 8px 2px map-get($color_palette,DarkBlue);
+                    }
+          }
           
 }

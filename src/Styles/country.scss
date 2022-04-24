@@ -1,7 +1,7 @@
 @import './tools.scss';
 .countryPage{
           margin: 0 auto;
-          margin:2% 3%;
+          padding:2% 3%;
 }
 button{
       margin-bottom: 2%;
@@ -17,10 +17,7 @@ button{
                     width: 50%;
           }
           >.countryInfo{
-                    padding-left: 1%;
-                  //   display: flex;
-                  //   flex-wrap: nowrap;
-                  //   flex-direction: row;   
+                    padding-left: 1%;  
           }
 }
 @media (max-width: 400px) {
