@@ -1,0 +1,29 @@
+@import './tools.scss';
+.TopHeader{
+          box-shadow: 0 4px 8px 0 map-get($color_palette,DarkBlue);
+}
+.darkMode{
+           background-color: map-get($color_palette,VeryDarkBlueT);
+           color: map-get($color_palette,White);
+           input,select{
+                    background-color: map-get($color_palette,VeryDarkBlueT);
+                    color: map-get($color_palette,White);      
+                    box-shadow: 1px 4px 8px 1px map-get($color_palette,DarkBlue);   
+           }
+           &>.header{
+                    background-color: map-get($color_palette,VeryDarkBlueT); 
+           }
+           &>.content{
+               &>a>.postItem{
+                    color: map-get($color_palette,White);
+                    width: 100%;
+                    height: 97%;
+                    border-color:map-get($color_palette,VeryLightGray);
+                    box-shadow: 0 4px 8px 0 map-get($color_palette,DarkBlue);
+                    &:hover{
+                              box-shadow: 0 8px 16px 0 map-get($color_palette,DarkBlue);
+                    }
+             }
+            }
+          
+}

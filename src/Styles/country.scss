@@ -23,6 +23,18 @@ button{
                   //   flex-direction: row;   
           }
 }
+@media (max-width: 400px) {
+      .country{
+            flex-direction: column;
+            &>img{
+                width: 100%;
+            }
+            >.countryInfo{
+                height:450px; 
+            }
+
+      }
+}
 .tagItems{
       margin: 2%;
 }
